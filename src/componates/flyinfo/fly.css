@@ -4,7 +4,8 @@
     align-items: center;
     padding: 40px;
     top: 30px;
-    background: url('/home/aldolegameur52/airline-frontend/src/componates/assets/back-font.png') no-repeat left center;
+    background: url('../assets/back-font.png') no-repeat left center;
+
     background-size: cover;
     height: 100vh;
     position: relative;
