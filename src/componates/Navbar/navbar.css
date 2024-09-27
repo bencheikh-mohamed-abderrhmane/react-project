@@ -1,0 +1,107 @@
+/* Styles de base pour le Navbar */
+header {
+    width: 100%;
+    background-color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+    transition: background-color 0.3s ease, margin-bottom 0.3s ease; /* Transition pour le margin-bottom */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    margin-right: 30px;
+  }
+  
+  .logo h3 {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 4px;
+  }
+  
+  /* Styles pour l'affichage mobile */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      height: 60vh;
+      width: 100%;
+      background-color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(100%);
+    }
+  
+    .nav-links.open {
+      transform: translateX(0);
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  
+    /* Fond bleu lorsque le menu est ouvert */
+    .navbar.menu-open {
+      background-color: #007bff; /* Fond bleu */
+      margin-bottom: 400px; /* Ajout du margin-bottom quand le menu est ouvert */
+    }
+  
+    .nav-links.open {
+      background-color: #007bff; /* Fond bleu */
+    }
+  
+    /* Couleur du texte en blanc lorsque le menu est ouvert */
+    .nav-links li a {
+      color: #fff;
+    }
+  
+    .nav-links li a:hover {
+      color: #ffcc00; /* Couleur jaune au survol */
+    }
+  }
+  

@@ -1,0 +1,221 @@
+.fly-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    top: 30px;
+    background: url('/home/aldolegameur52/airline-frontend/src/componates/assets/back-font.png') no-repeat left center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .fly-left {
+    flex: 1;
+    color: white;
+    max-width: 600px;
+    padding-left: 40px; /* Augmentation de l'espace */
+    z-index: 1; /* S'assurer que le texte est au-dessus du fond */
+  }
+  
+  .fly-title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 300px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Ajouter une ombre au texte */
+  }
+  
+  .fly-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .fly-read-more {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .fly-read-more:hover {
+    background-color: white;
+    color: #2196F3;
+  }
+  
+  .fly-right {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Plus d'ombre pour un effet de profondeur */
+    z-index: 2;
+  }
+  
+  .fly-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  .fly-tab {
+    background-color: #35a9db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fly-tab:hover {
+    background-color: #2e8bba; /* Couleur légèrement plus foncée au survol */
+  }
+  
+  .fly-tab.active {
+    background-color: #3bc83b;
+  }
+  
+  .fly-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fly-trip-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+  }
+  
+  .fly-trip-options label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .fly-trip-options input {
+    margin-right: 10px;
+  }
+  
+  .fly-input-group {
+    margin-bottom: 20px;
+  }
+  
+  .fly-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .fly-input-group input,
+  .fly-input-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .fly-input-group input:focus,
+  .fly-input-group select:focus {
+    border-color: #35a9db;
+  }
+  
+  .fly-search-btn {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fly-search-btn:hover {
+    background-color: #ffb600;
+  }
+  
+  .fly-input-group1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fly-input-group1 input {
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+    .fly-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .fly-left {
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .fly-title {
+      font-size: 3rem;
+    }
+  
+    .fly-right {
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fly-title {
+      font-size: 2.5rem;
+    }
+    
+  
+    .fly-right {
+      padding: 16px;
+     width: 100%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    .fly-tab {
+      padding: 10px 15px;
+      
+    }
+  
+    .fly-input-group label {
+      font-size: 0.9rem;
+    }
+  
+    .fly-input-group input,
+    .fly-input-group select {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+    .fly-wrapper{
+        height: auto;
+        width: 100%;
+    }
+    .fly-title{
+        position: absolute;
+    }
+  }
+  
